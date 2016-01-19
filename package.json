@@ -1,0 +1,19 @@
+{
+  "name": "fcc-timestamp",
+  "version": "1.0.0",
+  "description": "API that converts unix times to natural language and vice versa",
+  "main": "server.js",
+  "author": "Edward Cheung <echeung1991@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "^4.12.4",
+    "mongodb": "^2.1.4",
+    "socket.io": "~0.9.14",
+    "validator": "^4.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "license": "ISC"
+}
