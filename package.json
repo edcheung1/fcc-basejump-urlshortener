@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "fcc-timestamp",
   "version": "1.0.0",
   "description": "API that converts unix times to natural language and vice versa",
@@ -16,4 +17,27 @@
   },
   "devDependencies": {},
   "license": "ISC"
+=======
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "FCC Basejump: Url Shortener Microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edcheung1/fcc-basejump-urlshortener.git"
+  },
+  "author": "Edward Cheung <echeung1991@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edcheung1/fcc-basejump-urlshortener/issues"
+  },
+  "homepage": "https://github.com/edcheung1/fcc-basejump-urlshortener#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongodb": "^2.1.4"
+  }
+>>>>>>> 46a2b2f756a437216093eadbaa0720b5b87a0c3d
 }
