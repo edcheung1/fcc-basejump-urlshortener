@@ -41,7 +41,7 @@ module.exports = function (app, db) {
                     }
                     if(count == 0) {
                         getNextSequence('userid', function(seq) {
-                            var shortUrl = 'https://fcc-timestamp-edcheung1.c9users.io/' + seq;
+                            var shortUrl = 'https://edcheung-fcc-urlshortener.herokuapp.com/' + seq;
                             testdb.update(
                                 {'original_url': link},
                                 {'original_url': link, '_id': seq, 'short_url': shortUrl},
