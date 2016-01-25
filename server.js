@@ -6,6 +6,8 @@ var mongo = require('mongodb').MongoClient;
 
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 mongo.connect('mongodb://localhost:27017/testdb', function (err, db) {
     if (err) {
         throw new Error('Database failed to connect.');
@@ -15,8 +17,8 @@ mongo.connect('mongodb://localhost:27017/testdb', function (err, db) {
     
     routes(app, db);
 
-    app.listen(8080, function () {
-        console.log('Listening on port 8080...');
+    app.listen(app.get('port'), function () {
+        console.log('Node app is running on port ', app.get('port'));
     });
     
 })
