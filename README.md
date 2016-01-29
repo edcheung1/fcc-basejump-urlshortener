@@ -1,22 +1,12 @@
+## FCC Basejump: URL Shortener
+#### User stories:
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+* I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+* When I visit that shortened URL, it will redirect me to my original link.
+* If I pass an invalid URL that doesn't follow the valid http://www.example.com or www.example.com format, the JSON response will contain an error instead.
 
+#### Example usage:
+`https://edcheung-fcc-urlshortener.herokuapp.com/new/https://www.google.com`
 
-Welcome to your Node.js project on Cloud9 IDE!
-
-This chat example showcases how to use `socket.io` with a static `express` server.
-
-## Running the server
-
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+#### Example output:
+`{ original_url: "https://www.google.com", short_url: "https://edcheung-fcc-urlshortener.herokuapp.com/4" }`
